@@ -11,15 +11,30 @@
 
     <link rel="icon" href="./img/favicon.png">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
 
     <title>Yasir</title>
 </head>
 <body>
-    
-    <div class="header">
+
+    <header>
+        <div class="nav">
+            <div class="nav_menu">
+                <h>Yasir</h>
+                <li><a id="theme"><i class="fas fa-paint-brush"></i></a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#home">Home</a></li>
+            </div>
+        </div>
+        <div class="nav_placeholder" id="home"></div>
+    </header>
+
+    <div class="splash">
         <div class="container">
-            <br><br><br>
-            <h1>Hello, I'm Yasir.</h1>
+            <h1 style="text-align: left;">Hello, I'm Yasir.</h1>
             <h2>Python and Web Developer</h2>
             <br>
 
@@ -27,85 +42,117 @@
                 <i class="fab fa-github"></i>
                 mdxyasir
             </a>
+
             <a href="mailto:mdxyasir@gmail.com" class="btn">
                 <i class="fas fa-envelope"></i>
                 mdxyasir@gmail.com
             </a>
+
             <a href="https://deviantart.com/mdxyasir" target=_blank class="btn">
                 <i class="fab fa-deviantart"></i>
                 mdxyasir
             </a>
-            <br><br><br>
+            
         </div>
     </div>
 
-    <div class="languages">
+    <div class="languages" id=skills>
         <div class="container">
-            <br><br><br>
             <h1>Languages</h1>
             <br>
 
-            <div class=tab>
+            <div class="skill">
                 <i class="fab fa-python"></i>
                 Python
+                <p1 style="float: right;">80%</p1>
+                <div class="skill-bar">
+                    <div style="width: 80%;" class=percentage></div>
+                </div>
             </div>
-            <div class="tab">
+
+            <div class="skill">
                 <i class="fab fa-js"></i>
                 Javascript
-            </div>
-            <div class="tab">
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                HTML/CSS
-            </div>
-
-            <br><br><br>
-            <h1>Learning</h1>
-            <br>
-            <div class="tab">
-                <i class="fab fa-react"></i>
-                React.js
-            </div>
-            <div class="tab">
-                <i class="fas fa-code"></i>
-                Typescript
-            </div>
-            <br><br><br><br>
-        </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="projects">
-        <div class="container">
-            <br><br><br>
-            <h1>Featured Creation</h1>
-            <br>
-
-            <div class="project">
-                <div class="img">
-                    <img src="./img/nitro-logo.png" height="100%">
+                <p1 style="float: right;">55%</p1>
+                <div class="skill-bar">
+                    <div style="width: 55%;" class=percentage></div>
                 </div>
-                <h1>Nitro Request Bot</h1>
-                <p>A bot made for the 8700 member design community on Discord, Nitro Design. It allows people, who are looking for designers, to create requests to be sent in a channel. These requests can be seen by designers in the server. The designers can then message the person about their request. Overall, the bot makes it quick and easy for people to find designers, and vice versa</p>
-                <br><br>
-                <p>The code for this bot isn't available, but you can view it in Nitro Design.</p>
-                <br>
             </div>
-            <br>
-            <p>View more on my <a href="https://github.com/mdxyasir" target=_blank style="text-decoration: underline;">GitHub</a></p>
-            <br><br><br>
+
+            <div class="skill">
+                <i class="fab fa-html5"></i>
+                HTML
+                <p1 style="float: right;">95%</p1>
+                <div class="skill-bar">
+                    <div style="width: 95%;" class=percentage></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <i class="fab fa-css3"></i>
+                CSS
+                <p1 style="float: right;">75%</p1>
+                <div class="skill-bar">
+                    <div style="width: 75%;" class=percentage></div>
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <div class="footer">
+    <div class="services" id="services">
         <div class="container">
-            <div class="content">
-                <img src="./img/logo-white.png" height="70px">
+            <h1>Services</h1>
+            <br>
+            <div class="service-grid">
+                <div class="service" id=service>
+                    <span><i style="font-size: 30px;" class="fas fa-cogs"></i></span><br>
+                    <div class="service-content" style="font-size: 20px;">
+                        Discord Bot Developer    
+                    </div>
+                </div>
+                <div class="service">
+                    <span><i style="font-size: 30px;" class="fas fa-window-alt"></i></span><br>
+                    <div class="service-content" style="font-size: 20px;">
+                        Frontend Web Developer    
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <script src="https://kit.fontawesome.com/52b6d2c9b7.js" crossorigin="anonymous"></script>
+    <div class="portfolio" id=portfolio>
+        <div class="container">
+            <h1>Portfolio</h1>
+            <br><br>
+
+            <div class="project-container">
+                <img src="./img/nitro-logo.png">
+                <div class=project-content >
+                    <h>Nitro Request System</h><br>
+                    <p>A bot for the 9000 member design community, Nitro Design. It features a request system and a starboard to showcase the best creations made by designers.</p>
+                    <i class="fab fa-python"></i> Written in Python
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="footer" style="color: #E9E9E9; font-weight: 300;">
+        © Yasir
+    </div>
+
+    <script src="./js/theme.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/kursor"></script>
+    <script>
+        new kursor({
+            type: 1,
+            removeDefaultCursor: true,
+            color: "#4C566A"
+        })
+    </script>
+
 </body>
 </html>
