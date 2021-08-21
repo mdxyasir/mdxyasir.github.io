@@ -1,0 +1,296 @@
+@import url("fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+	--main: #4C566A;
+	--color: #5E81AC;
+    --background: #F5F5F5;
+	--background2: #FAFAFA;
+	--font: #606C71;
+	--shadow: rgb(140, 140, 140, 0.2);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Poppins";
+	transition: color 0.1s, background-color 0.2s, border-color 0.2s;
+}
+
+body {
+	color: var(--font);
+    background-color: var(--background);
+}
+
+h1 {
+	text-align: center;
+	color: var(--main);
+	font-weight: 500;
+}
+
+h2 {
+	color: var(--font);
+	font-weight: 400;
+}
+
+span {
+	color: var(--color);
+}
+
+a {
+	color: var(--main);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--color);
+}
+
+.skill {
+	font-weight: 500;
+	color: var(--background);
+}
+
+.skill-bar {
+	margin: 10px 0px 30px ;
+	width: 100%;
+	height: 5px;
+	border-radius: 1rem;
+	background-color: #979797;
+	
+}
+
+.percentage {
+	background-color: var(--background);
+	border-radius: 1rem;
+	height: 5px;
+}
+
+@media only screen and (max-width: 470px) {
+	header {
+		display: none;
+	}
+
+	.layered-waves {
+		overflow: hidden;
+		width: 100%;
+		height: 200px;
+	}	
+
+	.wave svg {
+		width: 100%;
+		height: 50px
+	}
+	
+}
+
+@media only screen and (min-width: 470px) {
+	.layered-waves {
+		overflow: hidden;
+		width: 100%;
+		height: 300px;
+	}	
+
+	.wave svg {
+		width: 100%;
+		height: 100px
+	}
+	
+}
+
+
+.nav_placeholder {
+	height: 70px;
+}
+
+.nav {
+	background-color: var(--background);
+	width: 100%;
+	position: fixed;
+	box-shadow: 0px  0px 5px var(--shadow);
+}
+
+li {
+	display: inline;
+	margin-left: 20px;
+	float: right;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+
+.splash {
+	padding: 120px 0px;
+}
+
+
+@media only screen and (max-width: 900px) {
+	.container {
+		margin: auto;
+		width: 90%;
+		padding: 60px 0px 0px 0px;
+	}
+	.nav_menu {
+		width: 90%;
+		margin: auto;
+		padding: 25px;
+		font-size: 18px;
+	}	
+
+	.project-container {
+		text-align: center;
+		grid-gap: 20px;
+		display: block;
+	}
+	
+	.project-container img {
+		width: 300px;
+		display: inline-block;
+		border-radius: 10px;
+	}
+	
+	.project-content {
+		width: 90%;
+		margin: auto;
+		padding: 20px 20px 0px 15px;
+	}
+	
+	.project-content h {
+		text-align: center;
+		color: var(--color);
+		font-weight: 600;
+		font-size: 20px;
+	}
+	
+	.project-content p {
+		padding: 10px 0px;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.container {
+		width: 840px;
+		margin: auto;
+		padding: 60px 0px 0px 0px;
+	}
+	.nav_menu {
+		width: 840px;
+		margin: auto;
+		padding: 25px;
+		font-size: 18px;
+	}
+
+	.project-container {
+		grid-gap: 20px;
+		padding: 0px 20px;
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+	
+	.project-container img {
+		width: 100%;
+		display: inline-block;
+		border-radius: 10px;
+	}
+	
+	.project-content {
+		padding: 20px 20px 0px 15px;
+	}
+	
+	.project-content h {
+		color: var(--color);
+		font-weight: 600;
+		font-size: 20px;
+	}
+	
+	.project-content p {
+		padding: 10px 0px;
+	}
+}
+
+.btn {
+	border-radius: 10px;
+	font-weight: 500;
+	font-size: 16px;
+	padding: 0.6rem 0.9rem;
+	margin-bottom: 7.5px;
+	margin-right: 10px;
+	text-decoration: none;
+	display: inline-block;
+	color: #FFF;
+	background-color: var(--color);
+	border-color: var(--color);
+	border-style: solid;
+	border-width: 3px;
+}
+
+.btn:hover {
+	color: var(--color);
+	text-decoration: none;	
+	background-color: var(--background);
+
+}
+
+.languages {
+	background-color: var(--color);
+}
+
+.languages h1 {
+	color: var(--background);
+}
+
+.service-grid {
+	text-align: center;
+}
+
+.service-content {
+	margin: 15px 0px;
+}
+
+.service {
+	margin: 10px;
+	width: 200px;
+	text-align: left;
+	display: inline-block;
+    background-color: var(--background2);
+    padding: 7.5rem 1.5rem 1.25rem 1.5rem;
+    border-radius: 10px;
+	
+}
+
+.footer {
+	background-color: var(--color);
+	padding: 30px 0px;
+	text-align: center;
+}
+
+
+/* Divider */
+
+.wave {
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave .shape-fill {
+    fill: #F5F5F5;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #e9e9e9;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgb(195, 195, 196);
+	border-radius: 10px;
+}

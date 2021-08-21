@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:title" content="Yasir" />
+    <meta property="og:description" content="A website showcasing my creations." />
+    <meta name="theme-color" content="#D8DEE9">
+
+    <link rel="icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+
+    <title>Yasir</title>
+</head>
+<body>
+
+    <header>
+        <div class="nav">
+            <div class="nav_menu">
+                <h>Yasir</h>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#home">Home</a></li>
+            </div>
+        </div>
+        <div class="nav_placeholder" id="home"></div>
+    </header>
+
+    <div class="splash">
+        <div class="container">
+            <h1 style="text-align: left;">Hello, I'm Yasir.</h1>
+            <h2>Python and Web Developer</h2>
+            <br>
+
+            <a href="https://github.com/mdxyasir" target="_blank" class="btn">
+                <i class="fab fa-github"></i>
+                mdxyasir
+            </a>
+
+            <a href="mailto:mdxyasir@gmail.com" class="btn">
+                <i class="fas fa-envelope"></i>
+                mdxyasir@gmail.com
+            </a>
+
+            <a href="https://deviantart.com/mdxyasir" target=_blank class="btn">
+                <i class="fab fa-deviantart"></i>
+                mdxyasir
+            </a>
+            
+        </div>
+    </div>
+
+    <div class="languages" id=skills>
+        <img src="./img/waves/layered-waves.png" alt="" class=layered-waves>
+        <div class="container">
+            <h1>Languages</h1>
+            <br>
+
+            <div class="skill">
+                <i class="fab fa-python"></i>
+                Python
+                <p1 style="float: right;">80%</p1>
+                <div class="skill-bar">
+                    <div style="width: 80%;" class=percentage></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <i class="fab fa-js"></i>
+                Javascript
+                <p1 style="float: right;">55%</p1>
+                <div class="skill-bar">
+                    <div style="width: 55%;" class=percentage></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <i class="fab fa-html5"></i>
+                HTML
+                <p1 style="float: right;">95%</p1>
+                <div class="skill-bar">
+                    <div style="width: 95%;" class=percentage></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <i class="fab fa-css3"></i>
+                CSS
+                <p1 style="float: right;">75%</p1>
+                <div class="skill-bar">
+                    <div style="width: 75%;" class=percentage></div>
+                </div>
+            </div>
+
+        </div>
+        <br><br><br>
+
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+
+    <div class="services" id="services">
+        <div class="container">
+            <h1>Services</h1>
+            <br>
+            <div class="service-grid">
+                <div class="service" id=service>
+                    <span><i style="font-size: 30px;" class="fas fa-cogs"></i></span><br>
+                    <div class="service-content" style="font-size: 20px;">
+                        Discord Bot Developer    
+                    </div>
+                </div>
+                <div class="service">
+                    <span><i style="font-size: 30px;" class="fas fa-window-alt"></i></span><br>
+                    <div class="service-content" style="font-size: 20px;">
+                        Frontend Web Developer    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio" id=portfolio>
+        <div class="container">
+            <h1>Portfolio</h1>
+            <br><br>
+
+            <div class="project-container">
+                <img src="./img/portfolio/nitro-logo.png">
+                <div class=project-content >
+                    <h>Nitro Request System</h><br>
+                    <p>A bot for the 9000 member design community, Nitro Design. It features a request system and a starboard to showcase the best creations made by designers.</p>
+                    <i class="fab fa-python"></i> Written in Python
+                </div>
+            </div>
+            <br><br><br>
+            <div class="project-container">
+                <img src="./img/portfolio/weather-app.png">
+                <div class=project-content>
+                    <h>Simple Weather App</h><br>
+                    <p>A simple weather app. Search a country or city and get the weather. The app is pretty useless as windows displays the weather in the taskbar but it was still fun to make.</p>
+                    <i class="fab fa-js"></i> Written in Javascript (Electron)
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="footer" style="color: #E9E9E9; font-weight: 300;">
+        © Yasir
+    </div>
+
+    <script src="./js/theme.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/kursor"></script>
+    <script>
+        new kursor({
+            type: 1,
+            removeDefaultCursor: true,
+            color: "#4C566A"
+        })
+    </script>
+
+</body>
+</html>
